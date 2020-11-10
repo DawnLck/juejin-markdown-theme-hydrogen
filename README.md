@@ -1,6 +1,6 @@
-# juejin 默认主题
+# juejin-markdown-theme hydrogen
 
-https://github.com/xitu/juejin-markdown-themes
+掘金 markdown 文章主题 hydrogen(氢)
 
 ## License
 
