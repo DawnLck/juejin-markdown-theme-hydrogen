@@ -1,11 +1,16 @@
 $monospace-font: Menlo, Monaco, Consolas, "Courier New", monospace;
+$title-font: Roboto, sans-serif;
 $line-space: 22px;
 
 $theme-color: #1976d2;
 
+$grey1: #333;
+$grey2: #454545;
+$grey3: #666;
+
 $color-link: #027fff;
-$color-font-primary: #333;
-$color-font-secondary: #666;
+$color-font-primary: rgba(0, 0, 0, 0.87);
+$color-font-secondary: $grey3;
 
 $icon-link: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjMDI3RkZGIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxwYXRoIGQ9Ik05LjgxNSA2LjQ0OGwxLjkzNi0xLjkzNmMxLjMzNy0xLjMzNiAzLjU4LTEuMjU5IDUuMDEzLjE3MyAxLjQzMiAxLjQzMiAxLjUxIDMuNjc2LjE3MyA1LjAxM2wtMS40NTIgMS40NTItLjk2OC45NjhjLTEuMzM3IDEuMzM2LTMuNTgxIDEuMjU5LTUuMDEzLS4xNzMiLz4KICAgICAgICA8cGF0aCBkPSJNMTEuMjY3IDE1LjM2N2wtMS45MzYgMS45MzZjLTEuMzM2IDEuMzM3LTMuNTggMS4yNi01LjAxMi0uMTczLTEuNDMyLTEuNDMyLTEuNTEtMy42NzYtLjE3My01LjAxMmwxLjQ1Mi0xLjQ1Mi45NjgtLjk2OGMxLjMzNi0xLjMzNyAzLjU4LTEuMjYgNS4wMTIuMTczIi8+CiAgICA8L2c+Cjwvc3ZnPgo=);
 
@@ -21,8 +26,6 @@ $icon-link: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcm
   font-weight: 400;
   font-size: 16px;
   color: $color-font-primary;
-
-  font-family: Roboto, sans-serif !important;
 
   background-image: linear-gradient(
       90deg,
@@ -70,19 +73,28 @@ $icon-link: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcm
     }
   }
   h2 {
-    padding-bottom: 12px;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: -10px;
+    border-left: 5px solid $grey2;
+    padding-left: 10px;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      border-color: $theme-color;
+    }
     // border-bottom: 1px solid #ececec;
   }
   h3 {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
     padding-bottom: 0;
   }
   h4 {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
   }
   h5 {
-    font-size: 15px;
+    font-size: 16px;
   }
   h6 {
     margin-top: 5px;
@@ -143,6 +155,7 @@ $icon-link: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcm
     margin: 0 4px;
     text-decoration: none;
     color: $color-link;
+    transition: color 300ms ease-in-out;
     // border-bottom: 1px solid #d1e9ff;
     &::after {
       content: "";
