@@ -110,7 +110,9 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
   h2,
   h3,
   p {
-    text-transform: capitalize;
+    &::first-letter {
+      text-transform: capitalize;
+    }
   }
 
   img {
@@ -191,6 +193,7 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     transition: all 300ms ease-in-out;
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
+
     &::after {
       content: "";
       display: inline-block;
@@ -208,6 +211,12 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     &:hover,
     &:active {
       color: #275b8c;
+    }
+
+    &.footer-ref {
+      &::after {
+        display: none;
+      }
     }
   }
 
