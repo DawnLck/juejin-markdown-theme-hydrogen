@@ -330,6 +330,26 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     padding-left: 6px;
   }
 
+  details {
+    border: none;
+    outline: none;
+    border-left: 4px solid $theme-color;
+    padding-left: 10px;
+    margin-left: 4px;
+    summary {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background: white;
+      margin: 0px -17px;
+      &:hover {
+        &::-webkit-details-marker {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+
   @media (max-width: 720px) {
     h1 {
       font-size: 24px;
