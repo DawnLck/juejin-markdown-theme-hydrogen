@@ -118,6 +118,11 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     }
   }
 
+  em {
+    text-emphasis: dot;
+    text-emphasis-position: under;
+  }
+
   img {
     display: block;
     margin: 0 auto;
