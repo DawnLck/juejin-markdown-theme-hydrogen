@@ -217,11 +217,16 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
       color: #275b8c;
     }
 
-    &.footer-ref {
+    &.footnote-backref,
+    &.footnote-ref {
       &::after {
-        display: none;
+        display: none !important;
       }
     }
+  }
+
+  sup a::after {
+    display: none !important;
   }
 
   table {
