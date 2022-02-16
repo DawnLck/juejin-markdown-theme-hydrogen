@@ -113,7 +113,7 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
   h2,
   h3,
   p {
-    &::first-letter {
+    &::first-letter:not(code) {
       text-transform: capitalize;
     }
   }
