@@ -8,6 +8,7 @@ $grey1: #333;
 $grey2: #454545;
 $grey3: #666;
 $grey4: #cbcbcb;
+$grey5: #dfdfdf;
 
 $color-link: #027fff;
 $color-font-primary: rgba(46, 36, 36, 0.87);
@@ -127,8 +128,8 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     display: block;
     margin: 0 auto !important;
     max-width: 100%;
-    border-radius: 2px;
-    @include elevation();
+    border-radius: 4px;
+    border: 1px solid $grey5;
   }
 
   hr {
@@ -201,7 +202,6 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     text-decoration: none;
     color: $color-link;
     transition: all 300ms ease-in-out;
-    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
 
     &::after {
@@ -317,6 +317,11 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
     li {
       margin-bottom: 0;
       list-style: inherit;
+
+      &::marker {
+        color: $theme-color;
+      }
+
       & .task-list-item {
         list-style: none;
         ul,
@@ -353,6 +358,10 @@ $icon-juejin: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABg
         }
       }
     }
+  }
+
+  .hljs-bullet, .hljs-symbol{
+     color: #c0341d;
   }
 
   @media (max-width: 720px) {
